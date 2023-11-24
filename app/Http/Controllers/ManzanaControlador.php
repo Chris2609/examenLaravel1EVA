@@ -75,7 +75,7 @@ class ManzanaControlador extends Controller
      */
     public function destroy(Manzana $manzana)
     {
-        $idEliminar = 3;
+        $idEliminar = 5;
         Manzana::where('id', $idEliminar)->delete();
 
         return redirect('verManzanas');
