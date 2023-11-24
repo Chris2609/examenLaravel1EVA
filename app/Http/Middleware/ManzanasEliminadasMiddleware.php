@@ -17,6 +17,7 @@ class ManzanasEliminadasMiddleware
     public function handle(Request $request, Closure $next): Response
     {
 
+        Log::info('Manzana eliminada: ');
         return $next($request);
     }
 }
